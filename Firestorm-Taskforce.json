@@ -1,0 +1,125 @@
+{
+  "gameSystem": {
+    "name": "Firestorm-Taskforce",
+    "id": "befb-fff3-96a1-4ec1",
+    "authorContact": "steve_990@hotmail.com",
+    "authorName": "steve_990",
+    "authorUrl": "https://thedicehateme.wordpress.com/",
+    "battleScribeVersion": 2.03,
+    "revision": 1,
+    "type": "gameSystem",
+    "xmlns": "http://www.battlescribe.net/schema/gameSystemSchema",
+    "categoryEntries": [
+      {"name": "Tier 1", "id": "b7f2-3aae-9005-2cb0"},
+      {"name": "Tier 2", "id": "a234-8cc8-06f7-984f"},
+      {"name": "Tier 3", "id": "5852-939c-bc78-8de7"},
+      {"name": "Orbital Defence", "id": "7c21-6208-4e91-e27e"}
+    ],
+    "costTypes": [{"name": "pts", "id": "points"}],
+    "forceEntries": [
+      {
+        "name": "Taskforce Battle Group",
+        "id": "739c-d9da-4d45-22ef",
+        "categoryLinks": [
+          {
+            "name": "Tier 1",
+            "id": "739c-d9da-4d45-22ef-b7f2-3aae-9005-2cb0",
+            "targetId": "b7f2-3aae-9005-2cb0",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}
+            ]
+          },
+          {
+            "name": "Tier 2",
+            "id": "739c-d9da-4d45-22ef-a234-8cc8-06f7-984f",
+            "targetId": "a234-8cc8-06f7-984f",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}
+            ]
+          },
+          {
+            "name": "Tier 3",
+            "id": "739c-d9da-4d45-22ef-5852-939c-bc78-8de7",
+            "targetId": "5852-939c-bc78-8de7",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}
+            ]
+          },
+          {
+            "name": "Orbital Defence",
+            "id": "739c-d9da-4d45-22ef-7c21-6208-4e91-e27e",
+            "targetId": "7c21-6208-4e91-e27e",
+            "constraints": [{"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 1}]
+          }
+        ]
+      },
+      {
+        "name": "Recon Battle Group",
+        "id": "6a9d-f3b3-5b0c-aefd",
+        "categoryLinks": [
+          {
+            "name": "Tier 2",
+            "id": "6a9d-f3b3-5b0c-aefd-a234-8cc8-06f7-984f",
+            "targetId": "a234-8cc8-06f7-984f",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}
+            ]
+          },
+          {
+            "name": "Tier 3",
+            "id": "6a9d-f3b3-5b0c-aefd-5852-939c-bc78-8de7",
+            "targetId": "5852-939c-bc78-8de7",
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "includeChildForces": true, "scope": "parent", "type": "max", "value": 2}
+            ]
+          }
+        ]
+      }
+    ],
+    "profileTypes": [
+      {
+        "name": "Ship",
+        "id": "123e-0b9b-d740-1581",
+        "characteristicTypes": [
+          {"name": "M\"", "id": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "id": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "id": "5465-1950-dcec-0923"},
+          {"name": "CP", "id": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "id": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "id": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Weapon",
+        "id": "3ec3-9dad-e19b-3539",
+        "characteristicTypes": [
+          {"name": "Classification", "id": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "id": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "id": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "id": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "id": "1d73-2b38-0199-411e"},
+          {"name": "LR", "id": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "id": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "SRS",
+        "id": "4a56-5816-91db-868f",
+        "characteristicTypes": [
+          {"name": "Classification", "id": "d9ad-55e5-73cb-032e"},
+          {"name": "Number", "id": "e1b7-18eb-20a5-e154"},
+          {"name": "MAR", "id": "4229-4b2b-3365-4548"},
+          {"name": "PB", "id": "7de4-cc82-cbce-b325"},
+          {"name": "EF", "id": "ec92-b54d-d7de-5b3e"},
+          {"name": "LR", "id": "cf41-ea87-ef12-34ed"},
+          {"name": "Type", "id": "627a-36a6-6760-5c22"}
+        ]
+      }
+    ]
+  }
+}
