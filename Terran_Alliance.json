@@ -1,0 +1,852 @@
+{
+  "catalogue": {
+    "name": "Terran Alliance",
+    "id": "50a5-9322-b5ab-9b5d",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "befb-fff3-96a1-4ec1",
+    "gameSystemRevision": 1,
+    "revision": 4,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "rules": [{"name": "Terran Alliance Tactical", "id": "3847-6d02-d208-9366", "description": "Fleet Tactics Bonus: +2", "hidden": false}],
+    "selectionEntries": [
+      {
+        "name": "Battleship Squadron",
+        "id": "803f-8d4c-afa6-13a9",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "803f-8d4c-afa6-13a9-b7f2-3aae-9005-2cb0", "primary": true, "targetId": "b7f2-3aae-9005-2cb0"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "a5e5-25e3-7626-41ac",
+            "collective": false,
+            "defaultSelectionEntryId": "d00a-305a-091f-7055",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Apollo Class",
+                "id": "d00a-305a-091f-7055",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "d17f-f764-3605-2300", "targetId": "b311-ce65-9b0f-523c", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cruiser Squadron",
+        "id": "8e8a-5797-04ec-c495",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "8e8a-5797-04ec-c495-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "2dec-859d-b06c-af60",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Hermes Class",
+                "id": "4f01-abf7-3e92-54db",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "d803-75f9-d48f-cb5c", "targetId": "ec09-4126-fb73-4b26", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frigate Squadron",
+        "id": "674b-20f1-3ad1-6bd8",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "674b-20f1-3ad1-6bd8-5852-939c-bc78-8de7", "primary": true, "targetId": "5852-939c-bc78-8de7"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "bd24-fe82-fa70-9974",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Armsmen Class",
+                "id": "76db-1129-f8af-934d",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "6ec2-7cad-841f-3814", "targetId": "41a5-b543-8eed-2d10", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Cruiser Squadron",
+        "id": "10b9-20af-bd94-fcaf",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "10b9-20af-bd94-fcaf-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "0ef8-07c9-00c7-24eb",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Hauberk Class",
+                "id": "60f6-bbdc-c7ec-12e7",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "0933-35b4-c62d-7c58", "targetId": "04a3-876c-797d-ed31", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Cruiser Squadron",
+        "id": "8da2-9e46-a31f-24df",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "8da2-9e46-a31f-24df-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "8d54-1657-4d6c-7339",
+            "collective": false,
+            "defaultSelectionEntryId": "c956-fc4d-fe2d-fb3a",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Perseus Class",
+                "id": "c956-fc4d-fe2d-fb3a",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "1bc9-9e48-496b-ca91", "targetId": "d530-a7b0-c02c-f9ca", "type": "selectionEntryGroup"}],
+                "selectionEntries": [
+                  {
+                    "name": "Perseus",
+                    "id": "be34-b713-fb00-c91e",
+                    "collective": false,
+                    "hidden": false,
+                    "type": "upgrade",
+                    "constraints": [
+                      {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                      {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "entryLinks": [{"id": "846d-af50-5eff-47d8", "targetId": "b8e1-22db-1472-1d9e", "type": "selectionEntry"}],
+                    "modifiers": [
+                      {
+                        "field": "maxSelections",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [{"childId": "1bc9-9e48-496b-ca91", "field": "selections", "repeats": 1, "scope": "c956-fc4d-fe2d-fb3a", "shared": true, "value": 1}]
+                      },
+                      {
+                        "field": "minSelections",
+                        "type": "increment",
+                        "value": 1,
+                        "conditions": [{"childId": "1bc9-9e48-496b-ca91", "field": "selections", "scope": "c956-fc4d-fe2d-fb3a", "shared": true, "type": "equalTo", "value": 0}]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Frigate Squadron",
+        "id": "a821-bf8c-a99f-593e",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "a821-bf8c-a99f-593e-5852-939c-bc78-8de7", "primary": true, "targetId": "5852-939c-bc78-8de7"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "7167-3047-37dd-0fe0",
+            "collective": false,
+            "defaultSelectionEntryId": "8fac-1486-b2dc-cee0",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Wayfarer Class",
+                "id": "8fac-1486-b2dc-cee0",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 5}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "f17e-e3b4-501f-4811", "targetId": "a869-81d9-3fb8-15ad", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Torpedo Cruiser Squadron",
+        "id": "5d80-e09a-4ee6-19bc",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "5d80-e09a-4ee6-19bc-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "51bb-ff26-6e1c-b263",
+            "collective": false,
+            "defaultSelectionEntryId": "5e19-52c6-d565-cadc",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Harpoon Class",
+                "id": "5e19-52c6-d565-cadc",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "d77d-16d1-7320-f636", "targetId": "bbd7-9995-9133-c546", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Apollo_Battleship",
+        "id": "8085-1d0b-8d27-b529",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "7", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "8", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "8", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "6", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+7", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+3", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Apollo_Weapon_I",
+        "id": "10d8-07f3-e605-fbf0",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "-", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "16", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "8", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "5", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Apollo_Weapon_II",
+        "id": "e2da-cf31-ce19-4044",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "F", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "5", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "6", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "2", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Apollo_Weapon_III",
+        "id": "b301-b329-d5cd-46bc",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "8", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "8", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "9", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Armsmen_Frigate",
+        "id": "ed9b-96fa-3789-b3d3",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "11", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "4", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "2", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "2", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+1", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+1", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Armsmen_Weapon_I",
+        "id": "6178-8664-1dac-3b7a",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "3", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Armsmen_Weapon_II",
+        "id": "5192-e6f4-abba-96b5",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "-", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "3", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "3", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "3", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Harpoon_Torpedo_Cruiser",
+        "id": "eca5-ad62-af00-4deb",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "7", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "5", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "5", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "4", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+3", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+3", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Harpoon_Weapon_I",
+        "id": "1e3a-8aae-9e3f-4c96",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "4", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "5", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Harpoon_Weapon_II",
+        "id": "dbc7-fb3c-9b01-0272",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "6", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "7", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "8", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Hauberk_Heavy_Cruiser",
+        "id": "89c1-08e3-a799-f1ac",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "6", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "5", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "5", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "5", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+3", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+3", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Hauberk_Weapon_I",
+        "id": "e769-9083-3618-8ca6",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "7", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "9", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Hauberk_Weapon_II",
+        "id": "3fcb-a4fb-ed2c-abb3",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "F", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "5", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "5", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Hermes_Cruiser",
+        "id": "106b-b4f8-fa3e-53b3",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "7", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "5", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "4", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "4", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+3", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+2", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Hermes_Weapon_I",
+        "id": "7e93-1232-9b4a-57f0",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "6", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "7", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Hermes_Weapon_II",
+        "id": "b086-3216-a21d-3a8f",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedoes", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "4", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "5", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Perseus_Light_Cruiser",
+        "id": "431c-2f12-36ee-6971",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "8", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "5", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "4", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "3", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+2", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+2", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Perseus_Weapon_I",
+        "id": "2375-3b67-8605-9762",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "7", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "5", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Perseus_Weapon_II",
+        "id": "8103-b132-d73b-8ffe",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "3", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "5", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Wayfarer_Light_Frigate",
+        "id": "7303-8fba-9c99-82ea",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "13", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "4", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "2", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "1", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+2", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+1", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Wayfarer_Weapon_I",
+        "id": "87bb-8ab7-1c15-05aa",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Nuclear", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "2", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "3", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Beam Weapon",
+        "id": "53df-5cea-1f23-3fd9",
+        "description": "Attacker can force the Defender to re-roll their die on the Damage Table.",
+        "hidden": false
+      },
+      {
+        "name": "Cyclic Shielding",
+        "id": "d277-9d34-8c86-dcb8",
+        "description": "This model uses its Shields [RED] to defend against all forms of Weapon Attacks (including Torpedoes) but uses the Heavy Dice Mechanic to do so.",
+        "hidden": false
+      },
+      {"name": "Difficult Target", "id": "7a6f-8e41-50a1-48a0", "description": "Attacker suffers -1 on Damage Table rolls.", "hidden": false},
+      {
+        "name": "Nuclear",
+        "id": "34fe-8296-6a6a-8421",
+        "description": "If a Weapon with this MAR destroys an enemy target, on a roll of 4+ ALL models within 4” gain a Disorder Marker.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Apollo",
+        "id": "b311-ce65-9b0f-523c",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 235}],
+        "infoLinks": [
+          {"id": "ac56-b10a-88d0-ad07", "targetId": "8085-1d0b-8d27-b529", "type": "profile"},
+          {"id": "ce95-cbee-1259-2eb3", "targetId": "10d8-07f3-e605-fbf0", "type": "profile"},
+          {"id": "9c9c-ea50-a13c-9f61", "targetId": "34fe-8296-6a6a-8421", "type": "rule"},
+          {"id": "1f90-90e0-d209-8696", "targetId": "d277-9d34-8c86-dcb8", "type": "rule"},
+          {"id": "3f5f-0fe5-a098-dae8", "targetId": "e2da-cf31-ce19-4044", "type": "profile"},
+          {"id": "396c-ded6-4241-7dff", "targetId": "b301-b329-d5cd-46bc", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Armsmen",
+        "id": "41a5-b543-8eed-2d10",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 30}],
+        "infoLinks": [
+          {"id": "4807-000e-5e5c-b95e", "targetId": "6178-8664-1dac-3b7a", "type": "profile"},
+          {"id": "7c3a-d22e-369e-fb2f", "targetId": "ed9b-96fa-3789-b3d3", "type": "profile"},
+          {"id": "bfa9-778f-d8ac-bb30", "targetId": "7a6f-8e41-50a1-48a0", "type": "rule"},
+          {"id": "08ed-3b64-6c1f-cdc2", "targetId": "53df-5cea-1f23-3fd9", "type": "rule"},
+          {"id": "1244-b75e-c6a1-9019", "targetId": "5192-e6f4-abba-96b5", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Harpoon",
+        "id": "bbd7-9995-9133-c546",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 90}],
+        "infoLinks": [
+          {"id": "bf94-1792-dd08-ef72", "targetId": "eca5-ad62-af00-4deb", "type": "profile"},
+          {"id": "26e9-a40e-7178-2ca2", "targetId": "1e3a-8aae-9e3f-4c96", "type": "profile"},
+          {"id": "9eeb-5a79-6123-6329", "targetId": "53df-5cea-1f23-3fd9", "type": "rule"},
+          {"id": "fcf6-c747-29da-3374", "targetId": "34fe-8296-6a6a-8421", "type": "rule"},
+          {"id": "81dc-fda7-4f1e-71ab", "targetId": "d277-9d34-8c86-dcb8", "type": "rule"},
+          {"id": "450d-0fa3-7225-49d1", "targetId": "dbc7-fb3c-9b01-0272", "type": "profile"}
+        ]
+      },
+      {
+        "name": "Hauberk",
+        "id": "04a3-876c-797d-ed31",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 90}],
+        "infoLinks": [
+          {"id": "737b-34bb-604b-759d", "targetId": "89c1-08e3-a799-f1ac", "type": "profile"},
+          {"id": "959b-ec50-0f2f-ca49", "targetId": "e769-9083-3618-8ca6", "type": "profile"},
+          {"id": "0dd0-aa97-96ea-78b6", "targetId": "34fe-8296-6a6a-8421", "type": "rule"},
+          {"id": "f999-e925-17e5-b80a", "targetId": "d277-9d34-8c86-dcb8", "type": "rule"},
+          {"id": "f763-d83a-89c5-5b05", "targetId": "3fcb-a4fb-ed2c-abb3", "type": "profile"},
+          {"id": "6e9c-ace6-8054-e8fd", "targetId": "53df-5cea-1f23-3fd9", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Hermes",
+        "id": "ec09-4126-fb73-4b26",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 65}],
+        "infoLinks": [
+          {"id": "cf37-a065-d0a6-0841", "targetId": "106b-b4f8-fa3e-53b3", "type": "profile"},
+          {"id": "d21d-0781-3d8f-8754", "targetId": "7e93-1232-9b4a-57f0", "type": "profile"},
+          {"id": "1596-9f00-0674-763e", "targetId": "34fe-8296-6a6a-8421", "type": "rule"},
+          {"id": "7dce-5ccd-62c2-5065", "targetId": "b086-3216-a21d-3a8f", "type": "profile"},
+          {"id": "6f32-0e3d-0580-d20d", "targetId": "53df-5cea-1f23-3fd9", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Perseus",
+        "id": "b8e1-22db-1472-1d9e",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 55}],
+        "infoLinks": [
+          {"id": "3d61-2a3f-8d73-73ce", "targetId": "431c-2f12-36ee-6971", "type": "profile"},
+          {"id": "4df4-e0ef-b3ee-5814", "targetId": "2375-3b67-8605-9762", "type": "profile"},
+          {"id": "54ed-7de9-1727-4fe1", "targetId": "8103-b132-d73b-8ffe", "type": "profile"},
+          {"id": "0dfb-5c75-f187-e1a6", "targetId": "53df-5cea-1f23-3fd9", "type": "rule"},
+          {"id": "e181-06f2-ef6d-1c77", "targetId": "34fe-8296-6a6a-8421", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Wayfarer",
+        "id": "a869-81d9-3fb8-15ad",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 20}],
+        "infoLinks": [
+          {"id": "622a-f958-eabb-9297", "targetId": "87bb-8ab7-1c15-05aa", "type": "profile"},
+          {"id": "c25d-088b-7612-2f51", "targetId": "7303-8fba-9c99-82ea", "type": "profile"},
+          {"id": "70a2-1c07-d06d-7be1", "targetId": "7a6f-8e41-50a1-48a0", "type": "rule"},
+          {"id": "a14e-4c31-bf00-5549", "targetId": "34fe-8296-6a6a-8421", "type": "rule"}
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Perseus Requisition",
+        "id": "d530-a7b0-c02c-f9ca",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Harpoon Torpedo Cruiser",
+            "id": "644f-984a-fe9e-3f8d",
+            "collective": false,
+            "hidden": false,
+            "page": 0,
+            "type": "model",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "09a3-afb9-9a3f-b9ac", "targetId": "bbd7-9995-9133-c546", "type": "selectionEntry"}]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "catalogue": {
+    "name": "Directorate",
+    "id": "396f-e684-13b5-760a",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "befb-fff3-96a1-4ec1",
+    "gameSystemRevision": 1,
+    "revision": 4,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "rules": [{"name": "Directorate Tactical", "id": "efc8-d631-9e0d-218b", "description": "Fleet Tactics  Bonus: +1", "hidden": false}],
+    "selectionEntries": [
+      {
+        "name": "Battleship",
+        "id": "7b10-3866-c662-17b0",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "7b10-3866-c662-17b0-b7f2-3aae-9005-2cb0", "primary": true, "targetId": "b7f2-3aae-9005-2cb0"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "98f7-b71b-cdb4-762c",
+            "collective": false,
+            "defaultSelectionEntryId": "5dff-5878-5d52-5c87",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Eliminator Class",
+                "id": "5dff-5878-5d52-5c87",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "d3fb-2687-636c-ed76", "targetId": "621c-46df-fba0-241f", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Cruiser Squadron",
+        "id": "07c0-95e2-43c6-e2bc",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "07c0-95e2-43c6-e2bc-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "b312-5458-d280-854b",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Champion Class",
+                "id": "d2cb-0de4-ee79-748b",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "2c94-ff54-51e5-f750", "targetId": "7fc7-9af4-dc8d-5e18", "type": "selectionEntryGroup"}],
+                "selectionEntries": [
+                  {
+                    "name": "Champion",
+                    "id": "2c11-c49a-4991-f485",
+                    "collective": false,
+                    "hidden": false,
+                    "page": 0,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                      {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "entryLinks": [{"id": "5559-dcb6-db5b-ba07", "targetId": "76c5-11f1-7578-201d", "type": "selectionEntry"}],
+                    "modifiers": [
+                      {
+                        "field": "maxSelections",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [{"childId": "2c94-ff54-51e5-f750", "field": "selections", "repeats": 1, "scope": "d2cb-0de4-ee79-748b", "shared": true, "value": 1}]
+                      },
+                      {
+                        "field": "minSelections",
+                        "type": "increment",
+                        "value": 1,
+                        "conditions": [{"childId": "2c94-ff54-51e5-f750", "field": "selections", "scope": "d2cb-0de4-ee79-748b", "shared": true, "type": "equalTo", "value": 0}]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Abraxas Class",
+                "id": "376f-74be-3d8f-c806",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "4c5e-5077-e94c-2d4d", "targetId": "7fc7-9af4-dc8d-5e18", "type": "selectionEntryGroup"}],
+                "selectionEntries": [
+                  {
+                    "name": "Abraxas",
+                    "id": "aac7-39d9-70b9-fcce",
+                    "collective": false,
+                    "hidden": false,
+                    "page": 0,
+                    "type": "model",
+                    "constraints": [
+                      {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+                      {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                    ],
+                    "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                    "entryLinks": [{"id": "1050-3520-2728-6c19", "targetId": "f1a9-18f8-8235-7947", "type": "selectionEntry"}],
+                    "modifiers": [
+                      {
+                        "field": "maxSelections",
+                        "type": "decrement",
+                        "value": 1,
+                        "repeats": [{"childId": "4c5e-5077-e94c-2d4d", "field": "selections", "repeats": 1, "scope": "376f-74be-3d8f-c806", "shared": true, "value": 1}]
+                      },
+                      {
+                        "field": "minSelections",
+                        "type": "increment",
+                        "value": 1,
+                        "conditions": [{"childId": "4c5e-5077-e94c-2d4d", "field": "selections", "scope": "376f-74be-3d8f-c806", "shared": true, "type": "equalTo", "value": 0}]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Escort Carrier Squadron",
+        "id": "9e70-37e5-df25-2fbb",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "9e70-37e5-df25-2fbb-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "778f-1d54-bc87-7f0f",
+            "collective": false,
+            "defaultSelectionEntryId": "e054-6f1d-14c8-ef35",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Ascendency Class",
+                "id": "e054-6f1d-14c8-ef35",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "5990-75a3-5db6-9071", "targetId": "cec0-21f8-b993-cfd5", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Frigate Squadron",
+        "id": "95de-5000-acf2-e5cb",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "95de-5000-acf2-e5cb-5852-939c-bc78-8de7", "primary": true, "targetId": "5852-939c-bc78-8de7"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "937a-7322-d5f1-9a3d",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Enforcer Class",
+                "id": "f2de-49b4-8bd1-ac07",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 4}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "6d7f-8ba7-685d-4a80", "targetId": "a5c1-5e9a-49b0-6153", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Heavy Cruiser Squadron",
+        "id": "fd7f-2194-c0b3-1c6f",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "fd7f-2194-c0b3-1c6f-a234-8cc8-06f7-984f", "primary": true, "targetId": "a234-8cc8-06f7-984f"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "a9f2-be10-fe98-e77a",
+            "collective": false,
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Justice Class",
+                "id": "a661-a2e4-dd54-62aa",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 2},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 3}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "5a84-0665-ebe3-eccf", "targetId": "44c0-4b9a-186d-44c5", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Light Frigate Squadron",
+        "id": "c7d3-d9c3-09b7-5797",
+        "collective": false,
+        "hidden": false,
+        "type": "unit",
+        "categoryLinks": [{"id": "c7d3-d9c3-09b7-5797-5852-939c-bc78-8de7", "primary": true, "targetId": "5852-939c-bc78-8de7"}],
+        "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+        "selectionEntryGroups": [
+          {
+            "name": "Ship Class",
+            "id": "95b9-c011-4811-2062",
+            "collective": false,
+            "defaultSelectionEntryId": "f55c-b973-731c-16d0",
+            "hidden": false,
+            "constraints": [
+              {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+              {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}
+            ],
+            "selectionEntries": [
+              {
+                "name": "Impact Class",
+                "id": "f55c-b973-731c-16d0",
+                "collective": false,
+                "hidden": false,
+                "page": 0,
+                "type": "unit",
+                "constraints": [
+                  {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 3},
+                  {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 5}
+                ],
+                "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+                "entryLinks": [{"id": "3fa0-6bef-38e6-9600", "targetId": "42ee-d2f5-0514-7ba6", "type": "selectionEntry"}]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Abraxas_Cruiser",
+        "id": "ad22-1a5f-ee59-c3e4",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "9", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "6", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "4", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "4", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+3", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "-", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Abraxas_Weapon_I",
+        "id": "092e-bae0-2147-7a5b",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "8", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "6", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "4", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Abraxas_Weapon_II",
+        "id": "a374-5c19-c8db-c38a",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "4", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "4", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Ascendency_Escort_Carrier",
+        "id": "ce11-b72d-3b22-e4b5",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "8", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "7", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "4", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "4", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+3", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+1", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Ascendency_SRS_I",
+        "id": "b912-e069-a6c7-421d",
+        "hidden": false,
+        "typeId": "4a56-5816-91db-868f",
+        "characteristics": [
+          {"name": "Classification", "$text": "Bombers", "typeId": "d9ad-55e5-73cb-032e"},
+          {"name": "Number", "$text": "x1", "typeId": "e1b7-18eb-20a5-e154"},
+          {"name": "MAR", "$text": "-", "typeId": "4229-4b2b-3365-4548"},
+          {"name": "PB", "$text": "5", "typeId": "7de4-cc82-cbce-b325"},
+          {"name": "EF", "$text": "5", "typeId": "ec92-b54d-d7de-5b3e"},
+          {"name": "LR", "$text": "-", "typeId": "cf41-ea87-ef12-34ed"},
+          {"name": "Type", "$text": "BLUE", "typeId": "627a-36a6-6760-5c22"}
+        ]
+      },
+      {
+        "name": "Ascendency_SRS_II",
+        "id": "a0c2-0098-2e3f-12f2",
+        "hidden": false,
+        "typeId": "4a56-5816-91db-868f",
+        "characteristics": [
+          {"name": "Classification", "$text": "Interceptors", "typeId": "d9ad-55e5-73cb-032e"},
+          {"name": "Number", "$text": "x1", "typeId": "e1b7-18eb-20a5-e154"},
+          {"name": "MAR", "$text": "-", "typeId": "4229-4b2b-3365-4548"},
+          {"name": "PB", "$text": "+6PD", "typeId": "7de4-cc82-cbce-b325"},
+          {"name": "EF", "$text": "+6PD", "typeId": "ec92-b54d-d7de-5b3e"},
+          {"name": "LR", "$text": "-", "typeId": "cf41-ea87-ef12-34ed"},
+          {"name": "Type", "$text": "BLUE", "typeId": "627a-36a6-6760-5c22"}
+        ]
+      },
+      {
+        "name": "Ascendency_Weapon_I",
+        "id": "6476-b051-9dfc-a188",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "6", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "5", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "2", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Ascendency_Weapon_II",
+        "id": "ecbe-3196-632c-d40a",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "4", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "4", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Champion_Cruiser",
+        "id": "2491-29cc-d286-8fc7",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "9", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "6", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "4", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "5", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+3", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+1", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Champion_Weapon_I",
+        "id": "1dfb-fc70-cb44-1bdb",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Laser_Batteries", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "7", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "5", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Champion_Weapon_II",
+        "id": "b7e5-066e-5ae1-486b",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "4", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "4", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Eliminator_Battleship",
+        "id": "9803-b4d5-2837-04f2",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "6", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "9", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "8", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "6", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+5", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "+3", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Eliminator_SRS_I",
+        "id": "9faf-fd96-eca1-96fa",
+        "hidden": false,
+        "typeId": "4a56-5816-91db-868f",
+        "characteristics": [
+          {"name": "Classification", "$text": "Interceptor", "typeId": "d9ad-55e5-73cb-032e"},
+          {"name": "Number", "$text": "x1", "typeId": "e1b7-18eb-20a5-e154"},
+          {"name": "MAR", "$text": "-", "typeId": "4229-4b2b-3365-4548"},
+          {"name": "PB", "$text": "+4PD", "typeId": "7de4-cc82-cbce-b325"},
+          {"name": "EF", "$text": "+4PD", "typeId": "ec92-b54d-d7de-5b3e"},
+          {"name": "LR", "$text": "-", "typeId": "cf41-ea87-ef12-34ed"},
+          {"name": "Type", "$text": "BLUE", "typeId": "627a-36a6-6760-5c22"}
+        ]
+      },
+      {
+        "name": "Eliminator_Weapon_I",
+        "id": "706f-fc11-7965-1da1",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "10", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "12", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "6", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Eliminator_Weapon_II",
+        "id": "9e30-f28d-65e3-c514",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "F", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "7", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "6", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "4", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Eliminator_Weapon_III",
+        "id": "d461-3505-d94f-a74e",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "6", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "6", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "6", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Enforcer_Frigate",
+        "id": "6f17-68a2-8145-4ae2",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "10", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "4", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "2", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "2", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+2", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "-", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Enforcer_Weapon_I",
+        "id": "f849-b29e-1fbb-8b54",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "4", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "4", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Impact_Light_Frigate",
+        "id": "2803-fd24-b644-6323",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "15", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "4", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "2", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "2", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+1", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "-", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Impact_Weapon_I",
+        "id": "f711-2fbc-dc9f-71f5",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "360", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "3", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "2", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "-", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Justice_Heavy_Cruiser",
+        "id": "ca19-5175-ea22-b8d5",
+        "hidden": false,
+        "typeId": "123e-0b9b-d740-1581",
+        "characteristics": [
+          {"name": "M\"", "$text": "9", "typeId": "27fe-7565-14c8-fd4d"},
+          {"name": "DR", "$text": "6", "typeId": "da32-5ba0-db70-78fc"},
+          {"name": "HP", "$text": "6", "typeId": "5465-1950-dcec-0923"},
+          {"name": "CP", "$text": "5", "typeId": "67fa-7a48-2711-2b76"},
+          {"name": "PD", "$text": "+5", "typeId": "427a-c855-3d1c-6a9e"},
+          {"name": "SH", "$text": "-", "typeId": "8a5c-b53b-a8b4-e8db"}
+        ]
+      },
+      {
+        "name": "Justice_Weapon_I",
+        "id": "d7c6-6426-2967-b525",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Gunnery", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Beam/Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "8", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "9", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "3", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "RED", "typeId": "4be7-a898-6577-8557"}
+        ]
+      },
+      {
+        "name": "Justice_Weapon_II",
+        "id": "ef72-2fb7-8dd4-b41d",
+        "hidden": false,
+        "typeId": "3ec3-9dad-e19b-3539",
+        "characteristics": [
+          {"name": "Classification", "$text": "Torpedos", "typeId": "f151-a3a4-39a3-8c18"},
+          {"name": "Arc", "$text": "P+S", "typeId": "0be2-72a3-63b6-3cd9"},
+          {"name": "MAR", "$text": "Bio-Hazard", "typeId": "dd2d-4538-b8b0-391e"},
+          {"name": "PB", "$text": "5", "typeId": "70a7-2cbf-ebd8-8c41"},
+          {"name": "EF", "$text": "5", "typeId": "1d73-2b38-0199-411e"},
+          {"name": "LR", "$text": "5", "typeId": "3365-b0b9-da67-6fc2"},
+          {"name": "Type", "$text": "BLUE", "typeId": "4be7-a898-6577-8557"}
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Beam Weapon",
+        "id": "5bcd-adba-3efe-290f",
+        "description": "Attacker can force the Defender to re-roll their die on the Damage Table.",
+        "hidden": false
+      },
+      {
+        "name": "Bio-Hazard",
+        "id": "807c-a1e5-62c6-6ce1",
+        "description": "If a weapon with this MAR causes a Disorder Marker to be added to a model, add an additional Disorder Marker to the same model.",
+        "hidden": false
+      },
+      {"name": "Difficult Target", "id": "1eb1-5a9e-ec0c-6ff6", "description": "Attacker suffers -1 on Damage Table rolls.", "hidden": false},
+      {
+        "name": "Elite Crew",
+        "id": "6990-a09a-3ae3-8949",
+        "description": "Models with this MAR gain a -1 on the Damage Table when defending against a Boarding Action and a +1 on the Damage Table when attacking an enemy model during a Boarding Action.",
+        "hidden": false
+      },
+      {"name": "Minefield", "id": "a34b-3512-842f-cbb9", "description": "Player with the most Squadrons with this MAR can place Minefields.", "hidden": false},
+      {
+        "name": "Special Forces",
+        "id": "36f7-04a4-bf6c-c396",
+        "description": "Attacker gains +1 on their Damage Table roll when performing a Boarding Assault.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Abraxas",
+        "id": "f1a9-18f8-8235-7947",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 65}],
+        "infoLinks": [
+          {"id": "ae04-d247-10d6-9a84", "targetId": "ad22-1a5f-ee59-c3e4", "type": "profile"},
+          {"id": "6107-1afd-62e1-b3f1", "targetId": "092e-bae0-2147-7a5b", "type": "profile"},
+          {"id": "3662-c07e-c4f4-7b70", "targetId": "a374-5c19-c8db-c38a", "type": "profile"},
+          {"id": "bd5e-d235-0dc3-e464", "targetId": "5bcd-adba-3efe-290f", "type": "rule"},
+          {"id": "6b64-aab4-28e3-7b7d", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"},
+          {"id": "c361-d369-f75b-c22a", "targetId": "36f7-04a4-bf6c-c396", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Ascendency",
+        "id": "cec0-21f8-b993-cfd5",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 75}],
+        "infoLinks": [
+          {"id": "ae95-957e-6fce-11f9", "targetId": "ce11-b72d-3b22-e4b5", "type": "profile"},
+          {"id": "9cea-8838-47c4-1ea9", "targetId": "6476-b051-9dfc-a188", "type": "profile"},
+          {"id": "31b0-028b-78f7-e5f0", "targetId": "ecbe-3196-632c-d40a", "type": "profile"},
+          {"id": "6e9f-ea97-aa9f-eda6", "targetId": "b912-e069-a6c7-421d", "type": "profile"},
+          {"id": "fdb3-7873-c0d0-cb96", "targetId": "a0c2-0098-2e3f-12f2", "type": "profile"},
+          {"id": "f19b-d413-758b-40d8", "targetId": "5bcd-adba-3efe-290f", "type": "rule"},
+          {"id": "0f69-d3fb-8f19-b365", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Champion",
+        "id": "76c5-11f1-7578-201d",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 50}],
+        "infoLinks": [
+          {"id": "3d33-d4bc-becf-9b03", "targetId": "2491-29cc-d286-8fc7", "type": "profile"},
+          {"id": "8090-c682-b8c2-ac2f", "targetId": "1dfb-fc70-cb44-1bdb", "type": "profile"},
+          {"id": "a41b-ae22-375d-2d7b", "targetId": "b7e5-066e-5ae1-486b", "type": "profile"},
+          {"id": "a4ff-7ff2-6947-b379", "targetId": "5bcd-adba-3efe-290f", "type": "rule"},
+          {"id": "2217-5d56-24bc-1bfa", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"},
+          {"id": "b164-427b-ccde-8a0b", "targetId": "36f7-04a4-bf6c-c396", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Eliminator",
+        "id": "621c-46df-fba0-241f",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 210}],
+        "infoLinks": [
+          {"id": "afb4-5345-bc33-1825", "targetId": "9803-b4d5-2837-04f2", "type": "profile"},
+          {"id": "2222-f022-9160-68ff", "targetId": "d461-3505-d94f-a74e", "type": "profile"},
+          {"id": "eb74-699f-8b82-39fa", "targetId": "9faf-fd96-eca1-96fa", "type": "profile"},
+          {"id": "1d43-64c5-eb6a-2064", "targetId": "706f-fc11-7965-1da1", "type": "profile"},
+          {"id": "5208-1de6-d166-454b", "targetId": "9e30-f28d-65e3-c514", "type": "profile"},
+          {"id": "cb4f-76cc-4595-ed2e", "targetId": "5bcd-adba-3efe-290f", "type": "rule"},
+          {"id": "6cd7-aa2c-0551-1744", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"},
+          {"id": "d622-797b-8107-08d1", "targetId": "6990-a09a-3ae3-8949", "type": "rule"},
+          {"id": "70d1-c685-0741-4ee5", "targetId": "a34b-3512-842f-cbb9", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Enforcer",
+        "id": "a5c1-5e9a-49b0-6153",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 25}],
+        "infoLinks": [
+          {"id": "d80e-e2da-1475-2655", "targetId": "6f17-68a2-8145-4ae2", "type": "profile"},
+          {"id": "55c7-3f74-9c4b-0ede", "targetId": "f849-b29e-1fbb-8b54", "type": "profile"},
+          {"id": "1def-060d-0ea2-4dc3", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"},
+          {"id": "8dc6-2e37-d257-88b3", "targetId": "1eb1-5a9e-ec0c-6ff6", "type": "rule"},
+          {"id": "4e53-7685-1327-1e98", "targetId": "5bcd-adba-3efe-290f", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Impact",
+        "id": "42ee-d2f5-0514-7ba6",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 20}],
+        "infoLinks": [
+          {"id": "2956-b6f9-d924-e4d1", "targetId": "2803-fd24-b644-6323", "type": "profile"},
+          {"id": "d892-6799-aa71-4500", "targetId": "f711-2fbc-dc9f-71f5", "type": "profile"},
+          {"id": "3991-65dd-5918-36ce", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"},
+          {"id": "77f7-fdeb-4bee-96f8", "targetId": "1eb1-5a9e-ec0c-6ff6", "type": "rule"}
+        ]
+      },
+      {
+        "name": "Justice",
+        "id": "44c0-4b9a-186d-44c5",
+        "collective": true,
+        "hidden": false,
+        "page": 0,
+        "type": "model",
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 1},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "costs": [{"name": "pts", "typeId": "points", "value": 85}],
+        "infoLinks": [
+          {"id": "3399-7d4c-0822-fecf", "targetId": "ca19-5175-ea22-b8d5", "type": "profile"},
+          {"id": "62a0-d954-9c96-88aa", "targetId": "d7c6-6426-2967-b525", "type": "profile"},
+          {"id": "03aa-6ac0-cb6c-0ae7", "targetId": "ef72-2fb7-8dd4-b41d", "type": "profile"},
+          {"id": "3fa6-ba59-9410-dd2f", "targetId": "5bcd-adba-3efe-290f", "type": "rule"},
+          {"id": "8d67-91ee-d26b-6610", "targetId": "807c-a1e5-62c6-6ce1", "type": "rule"},
+          {"id": "2f1d-2d54-dd55-932d", "targetId": "36f7-04a4-bf6c-c396", "type": "rule"}
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Abraxas/Champion Replacement",
+        "id": "7fc7-9af4-dc8d-5e18",
+        "collective": false,
+        "hidden": false,
+        "constraints": [
+          {"id": "minSelections", "field": "selections", "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1},
+          {"id": "minInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInForce", "field": "selections", "includeChildSelections": true, "scope": "force", "shared": true, "type": "max", "value": -1},
+          {"id": "minInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "min", "value": 0},
+          {"id": "maxInRoster", "field": "selections", "includeChildSelections": true, "scope": "roster", "shared": true, "type": "max", "value": -1},
+          {"id": "minPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "min", "value": 0},
+          {"id": "maxPoints", "field": "points", "includeChildSelections": true, "scope": "parent", "type": "max", "value": -1}
+        ],
+        "selectionEntries": [
+          {
+            "name": "Ascendency Escort Carrier",
+            "id": "10f4-4b7d-fedc-fec3",
+            "collective": false,
+            "hidden": false,
+            "page": 0,
+            "type": "model",
+            "constraints": [{"id": "maxSelections", "field": "selections", "scope": "parent", "type": "max", "value": 1}],
+            "costs": [{"name": "pts", "typeId": "points", "value": 0}],
+            "entryLinks": [{"id": "2dd0-1df8-b761-6bd7", "targetId": "cec0-21f8-b993-cfd5", "type": "selectionEntry"}]
+          }
+        ]
+      }
+    ]
+  }
+}
